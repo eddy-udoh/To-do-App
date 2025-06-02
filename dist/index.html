@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,32 +12,35 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-poppins  bg-[linear-gradient(135deg,_#153677,_#4e085f)]">
+  <body
+    class="min-h-screen items-center justify-center bg-[linear-gradient(135deg,_#153677,_#4e085f)]"
+  >
     <!-- class ="container" -->
-    <div
-      class="w-full min-h-screen p-2"
-    >
+    <div class="w-full min-h-screen p-2">
       <!-- class="todo-app" -->
       <div
         class="w-full max-w-[540px] bg-white mx-auto mt-[100px] mb-[20px] px-[30px] pt-[40px] pb-[70px] rounded-[10px]"
       >
-        <h2 class="text-2xl font-bold text-[#002765] flex items-center mb-[20px]">
+        <h2
+          class="text-2xl font-bold text-[#002765] flex items-center mb-[20px]"
+        >
           To-Do list
           <img class="w-[30px] ml-[10px]" src="assets/icon.png" alt="" />
         </h2>
         <!-- class="row" -->
         <div
-          class="flex items-center justify-between bg-[#edeef0] rounded-[30px] pl-[20px] mb-[25px]"
+          class="flex flex-col md:flex-row gap-3 bg-[#edeef0] rounded-[30px] px-3 py-2 md:px-4 md:py-3 mb-6 w-full max-w-md mx-auto"
         >
           <input
             class="flex-1 border-none outline-none bg-transparent p-2"
             type="text"
             id="input-box"
-            placeholder="Add your text "
+            placeholder="Add your task"
           />
           <button
             onclick="addTask()"
-            class="border-none outline-none py-[16px] px-[50px] bg-[#ff5945] text-white text-base cursor-pointer rounded-[40px]"
+            class="border-none outline-none py-2 px-6 md:py-3 md:px-8 bg-[#ff5945]  text-white text-sm md:text-base font-medium cursor-pointer rounded-[40px] transition duration-300 ease-in-out"
+            
           >
             Add
           </button>
